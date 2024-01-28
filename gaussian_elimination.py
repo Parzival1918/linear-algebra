@@ -38,6 +38,8 @@ def main(mat: np.ndarray):
         print(f"Step {check_pos + 1}:")
         print(mat)
 
+    np.savetxt(fname='matrix.out', X=mat, header='Gaussian elimination')
+
 if __name__ == '__main__':
     mat = np.loadtxt('matrix.in')
     main(mat)
